@@ -174,10 +174,10 @@ animation-name: animar;
     
 
     0% {
-        transform: scale(.2);
+        transform: scale(.1);
        color: black;
        
-        letter-spacing: 10px;
+        letter-spacing: 6px;
        
        
        
