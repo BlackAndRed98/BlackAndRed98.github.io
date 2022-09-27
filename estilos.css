@@ -424,7 +424,7 @@ header nav {
 }
 #bienvenidos .texto{
     width: 50%;
-    max-width: 500px;
+    max-width: 50vh;
     text-align: initial;
     padding-left: 30px;
     display: flex;
@@ -440,10 +440,11 @@ header nav {
 
 #bienvenidos .img-container{
     background-image: url("fondos/web-3.0-1024x576.webp");
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     height: 30vh;
-    width: 100vh;
+    width: 75vh;
+    
     
 }
 #programas .programas {
