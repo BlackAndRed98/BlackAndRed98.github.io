@@ -1,5 +1,5 @@
 *{box-sizing: border-box;
-color: white;
+color: azure;
 }
 
 html {
@@ -59,7 +59,10 @@ button:hover {
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.705);
+    
+    
+
    
 }
 header .logo {
@@ -67,7 +70,7 @@ header .logo {
     padding: 25px 30px;
     font-weight: bold;
     color: azure;
-    font-size: 4em; 
+    font-size: 7vh; 
     
 }
 
@@ -90,8 +93,9 @@ header .nav {
     display:flex ;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
-    
+    position: relative; 
+    z-index: 120px;
+
 }
 
 
@@ -101,6 +105,8 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: white;
+    font-size: 2vh;
+    position: relative; z-index: 120px;
 
     
 }
@@ -111,7 +117,7 @@ header a {
 header a:hover {
     color:rgb(255, 0, 0);
     transition: all 2s;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
 }
 
@@ -152,13 +158,18 @@ animation-name: animar;
     letter-spacing: 3px;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transform: skewX(10deg)skewY(-10deg);;
+    transform: skewX(10deg)skewY(-10deg) translateY(1em);
+    padding: 10px, 30px;
+    
+    
+    
 
 
 
 }
 #hero h2{
     animation-duration: 5s;
+    color: azure;
     animation-name: animar;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-style:ridge;
@@ -168,7 +179,8 @@ animation-name: animar;
     border-right: 3px;
     letter-spacing: 0.5vh;
     font-size: 4vh;
-    transform: skewX(5deg) 
+    transform: skewX(5deg) ;
+    
 
 }
 
@@ -179,6 +191,7 @@ animation-name: animar;
     border-color: azure;
 }
 @keyframes animar {
+    
 
     
 
@@ -384,6 +397,7 @@ header nav {
     flex-direction: row;
     padding-bottom:0 ;
     padding-right: 20px;
+    
 }
 #bienvenidos .container{
     display: flex;
