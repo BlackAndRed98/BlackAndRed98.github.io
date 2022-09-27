@@ -54,7 +54,7 @@ button:hover {
 
 .container {
     max-width: 1400px;
-    margin: auto;
+    margin: 0;
     
 }
 
@@ -398,6 +398,7 @@ footer .container {
 /*-----------SECTION #MEDIA-----------*/
 
 @media (min-width: 720px) {
+    
     
     header{
     position: fixed;
