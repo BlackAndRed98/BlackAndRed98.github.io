@@ -68,6 +68,7 @@ header .logo {
     font-weight: bold;
     color: azure;
     font-size: 4em; 
+    
 }
 
 header .logo:hover{
@@ -110,7 +111,7 @@ header a {
 header a:hover {
     color:rgb(255, 0, 0);
     transition: all 2s;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 
 }
 
@@ -135,11 +136,14 @@ header a:hover {
 
 }
 #hero h1{
+
+    
 animation-name: animar;
     animation-duration: 5s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vh;
     border-style:ridge;
     border-radius: 2em;
     border-width: 5px;
@@ -166,46 +170,67 @@ animation-name: animar;
     font-size: 4vh;
     transform: skewX(5deg) 
 
-    
+}
 
+#hero button {
+    animation-duration: 5s;
+    animation-name: animar;
+    animation-iteration-count: initial;
+    border-color: azure;
 }
 @keyframes animar {
 
     
 
     0% {
-        transform: scale(.1);
-       color: black;
-       
+        
+       color: rgb(255, 0, 0);
+       transform: scale(.3);
         letter-spacing: 6px;
+        border-color: azure;
        
        
        
 
 
     }
+    10%{
+        color: rgb(255, 255, 255);
+         transform: rotatex(10deg);
+    }
 
     30% {
-        color: azure;
-        
-        transform: rotateX(360deg);
+        color: rgb(0, 0, 0);
+    
+       
         
     }
 
     50% {
         color: red;
+        transform: rotateX(20deg);
     }
 
     70% {
         color: black;
-
+      transform: rotateY(-500deg);
+        border-color: rgba(110, 104, 104, 0.589);
+        
     }
 
     80% {
         color: rgba(0,0,0,0.2);
-
+        border-color: rgba(153, 141, 141, 0.658);
+        transform: rotateY(500deg);
+        
         
          
+    }
+
+    100%{
+        color: azure;
+        border-color: azure; 
+        
     }
    
 
@@ -220,6 +245,7 @@ animation-name: animar;
 #bienvenidos .container {
     text-align: center;
     padding: 100px 12px ;
+    size: 90vh;
 }
 #bienvenidos h2 {
     margin-top: 0;
@@ -232,6 +258,7 @@ animation-name: animar;
 }
 
 #programas .container {
+    size: 70vh;
     padding: 100px 15px;
     
 }
