@@ -2,6 +2,9 @@
 color: azure;
 }
 
+
+/*--------------PRINCIPIO--------------*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,6 +16,7 @@ letter-spacing: 2px;
 background-color: black;
 }
 
+/*------TAMANIO #DE #FUENTES #Y #ESTILO #MAS #HOVER #DE #LOS #BOTONES-------*/
 
 h1{font-size: 3.5em;}
 h2{font-size:2.7em;}
@@ -22,7 +26,9 @@ ul{list-style:none;}
 li {font-size: 1.25em;}
 
 button{
-    font-size: 1.8em;
+    font-size: 1.8vh;
+    height: 5vh;
+    width: 15vh;
     font-weight: bold;
     padding: 10px, 30px;
     border-radius: 5px;
@@ -30,12 +36,8 @@ button{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
     background-color: rgba(255, 0, 0, 0.76);
-    animation-name: temblor;
-    
+    animation-name: temblor;   
 }
-
-
-
 
 button:hover {
     background-color: rgba(255, 0, 0, 0.76);
@@ -43,26 +45,28 @@ button:hover {
     border-radius: 50%;
     border-color: rgba(0,0,0,0.5);
     border-style: double;
-    letter-spacing: 5px;
-    
-
-    
+    letter-spacing: 5px;    
 }
+
+
+
+/*-----------CONTENEDOR #GENERAL-------------*/
 
 .container {
     max-width: 1400px;
     margin: auto;
+    
 }
 
 .color-acento{
     color: rgba(255, 0, 0, 0.795);
 }
 
+
+/*----------HEADER-----------------*/
+
 header{
     background-color: rgba(0, 0, 0, 0.705);
-    
-    
-
    
 }
 header .logo {
@@ -70,14 +74,14 @@ header .logo {
     padding: 25px 30px;
     font-weight: bold;
     color: azure;
-    font-size: 7vh; 
+    font-size: 5.7vh; 
     
 }
 
 header .logo:hover{
     transition: all 1s;
     transition-timing-function: ease-in-out ;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color:rgba(255, 0, 0, 0.795);
 
 }
@@ -86,18 +90,15 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+  
 }
 
 header .nav {
     display:flex ;
     flex-direction: column;
     text-align: center;
-    position: relative; 
-    z-index: 120px;
 
 }
-
 
 
 header a {
@@ -105,13 +106,9 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 2vh;
-    position: relative; z-index: 120px;
-
+    font-size: 2.5vh;
     
 }
-
-
 
 
 header a:hover {
@@ -120,6 +117,8 @@ header a:hover {
     letter-spacing: 2px;
 
 }
+
+/*------------HERO #SECCION #PRINCIPAL #MAS #ANIMACION #PRINCIPAL------------*/
 
 #hero {
     display: flex;
@@ -136,9 +135,7 @@ header a:hover {
     ) ,url("fondos/geometry-cyberspace-digital-art-red-wallpaper-preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;    
-
-    
+    background-position: center center;  
 
 }
 #hero h1{
@@ -149,7 +146,7 @@ animation-name: animar;
     animation-timing-function: ease-in-out;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5vh;
+    font-size: 4vh;
     border-style:ridge;
     border-radius: 2em;
     border-width: 5px;
@@ -158,12 +155,8 @@ animation-name: animar;
     letter-spacing: 3px;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transform: skewX(10deg)skewY(-10deg) translateY(1em);
+    transform: skewX(10deg)skewY(-10deg) translateY(0em);
     padding: 10px, 30px;
-    
-    
-    
-
 
 
 }
@@ -178,7 +171,7 @@ animation-name: animar;
     border-top: 5px;
     border-right: 3px;
     letter-spacing: 0.5vh;
-    font-size: 4vh;
+    font-size: 3vh;
     transform: skewX(5deg) ;
     
 
@@ -190,6 +183,8 @@ animation-name: animar;
     animation-iteration-count: initial;
     border-color: azure;
 }
+
+
 @keyframes animar {
     
 
@@ -199,7 +194,7 @@ animation-name: animar;
         
        color: rgb(255, 0, 0);
        transform: scale(.3);
-        letter-spacing: 6px;
+        letter-spacing: 5px;
         border-color: azure;
        
        
@@ -234,7 +229,7 @@ animation-name: animar;
     80% {
         color: rgba(0,0,0,0.2);
         border-color: rgba(153, 141, 141, 0.658);
-        transform: rotateY(500deg);
+        transform: rotateY(-500deg);
         
         
          
@@ -249,9 +244,12 @@ animation-name: animar;
 
 }
 
+/*------------SECCION #BIENVENIDOS--------------*/
 
 #bienvenidos {
     margin: 0;
+    image-rendering: optimizeQuality;
+    
 
 }
 
@@ -261,8 +259,12 @@ animation-name: animar;
     size: 90vh;
 }
 #bienvenidos h2 {
-    margin-top: 0;
+    margin-top: 3vh;
+    font-size: 5vh;
 }
+
+
+/*------------SECCION #PROGRAMAS #NOTICIAS-------------*/
 
 #programas {
     background-color: rgb(77, 0, 0);
@@ -325,9 +327,14 @@ animation-name: animar;
     ) ,url("fondos/istockphoto-1391668469-170667a.jpg");
 }
 
+
+/*-------------SECCION #CARACTERISTICAS #ACTUALIZACION-------------*/
+
 #caracteristicas .container{
+    height: 110vh;
     text-align: center;
     padding: 250px 0px;
+    
     
 
 }
@@ -349,21 +356,26 @@ animation-name: animar;
     
 }
 
+/*-------------SECCION #CONECTATE #YA----------------*/
+
 #Contectateya h2 {
     font-size: 5em;
 
 }
 
 #Conectateya button {
- font-size: 4vh;
+ font-size: 3vh;
  color: azure;
  background-color: black;
  border-color: azure;
  border-radius: 2em;
  border-spacing: 1em;
  align-content: center;
+ width: fit-content;
  
 }
+
+/*----------SECCION #FOOTER-----------------------*/
 
 footer {
     background-color:  black;
@@ -383,15 +395,19 @@ footer .container {
     align-items: flex-end;
 }
 
+/*-----------SECTION #MEDIA-----------*/
+
 @media (min-width: 720px) {
     
     header{
     position: fixed;
     width: 100%;
+   
 }
 header .container {
     flex-direction: row;
     justify-content: space-between;
+   
 }
 header nav {
     flex-direction: row;
@@ -414,6 +430,7 @@ header nav {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    font-size: 2.3vh;
 
 }
 #bienvenidos .h2{
@@ -424,8 +441,8 @@ header nav {
     background-image: url("fondos/web-3.0-1024x576.webp");
     background-size: cover;
     background-position: center center;
-    height: 500px;
-    width: 600px;
+    height: 30vh;
+    width: 100vh;
     
 }
 #programas .programas {
@@ -448,11 +465,13 @@ header nav {
     padding: 15px;
 }
 #caracteristicas{
+    image-rendering: optimizeQuality;
 background-image: linear-gradient(
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
 ) ,url("fondos/Web-3.0-scaled.jpeg");
+
 
 }
 
