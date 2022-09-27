@@ -145,7 +145,7 @@ animation-name: animar;
     border-width: 5px;
     border-bottom: 5px;
     border-left: 3px;
-    letter-spacing: 1.5vh;
+    letter-spacing: 3px;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     transform: skewX(10deg)skewY(-10deg);;
