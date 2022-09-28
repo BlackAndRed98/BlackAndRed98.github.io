@@ -14,6 +14,7 @@ body{margin: 0;
 font-style: oblique;
 letter-spacing: 2px;
 background-color: black;
+
 }
 
 /*------TAMANIO #DE #FUENTES #Y #ESTILO #MAS #HOVER #DE #LOS #BOTONES-------*/
@@ -54,7 +55,7 @@ button:hover {
 
 .container {
     max-width: 1400px;
-    margin: 0;
+    margin: auto;
     
 }
 
@@ -248,14 +249,14 @@ animation-name: animar;
 
 #bienvenidos {
     margin: 0;
-    image-rendering: optimizeQuality;
+   
     
 
 }
 
 #bienvenidos .container {
     text-align: center;
-    padding: 100px 12px ;
+    padding: 150px 20px  ;
     size: 90vh;
 }
 #bienvenidos h2 {
@@ -403,6 +404,7 @@ footer .container {
     header{
     position: fixed;
     width: 100%;
+
    
 }
 header .container {
@@ -423,10 +425,10 @@ header nav {
 
 }
 #bienvenidos .texto{
-    width: 50%;
-    max-width: 50vh;
-    text-align: initial;
-    padding-left: 30px;
+    width: cover;
+    
+    text-align: center;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -440,10 +442,10 @@ header nav {
 
 #bienvenidos .img-container{
     background-image: url("fondos/web-3.0-1024x576.webp");
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
-    height: 30vh;
-    width: 75vh;
+    height:30vh ;
+    width:60vh;
     
     
 }
