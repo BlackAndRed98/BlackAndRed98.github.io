@@ -75,7 +75,7 @@ header .logo {
     padding: 25px 30px;
     font-weight: bold;
     color: azure;
-    font-size: 5.7vh; 
+    font-size: 5vh; 
     
 }
 
@@ -98,6 +98,7 @@ header .nav {
     display:flex ;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 25px;
 
 }
 
@@ -107,7 +108,7 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 2.5vh;
+    font-size: 2vh;
     
 }
 
@@ -145,7 +146,7 @@ header a:hover {
 animation-name: animar;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    color: white;
+    color: azure;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4vh;
     border-style:ridge;
@@ -256,11 +257,11 @@ animation-name: animar;
 
 #bienvenidos .container {
     text-align: center;
-    padding: 150px 20px  ;
-    size: 90vh;
+    padding: 150px 12px  ;
+    
 }
 #bienvenidos h2 {
-    margin-top: 3vh;
+    margin-top: 0;
     font-size: 5vh;
 }
 
@@ -268,20 +269,21 @@ animation-name: animar;
 /*------------SECCION #PROGRAMAS #NOTICIAS-------------*/
 
 #programas {
+    
     background-color: rgb(77, 0, 0);
     color: azure;
     text-align: center;
 }
 
 #programas .container {
-    size: 70vh;
+    
     padding: 100px 15px;
     
 }
 
 #programas .h2 {
     margin-top: 0;
-    font-size: 2.5em;
+    font-size: 3vh;
 }
 
 
@@ -332,7 +334,7 @@ animation-name: animar;
 /*-------------SECCION #CARACTERISTICAS #ACTUALIZACION-------------*/
 
 #caracteristicas .container{
-    height: 110vh;
+    
     text-align: center;
     padding: 250px 0px;
     
@@ -425,10 +427,10 @@ header nav {
 
 }
 #bienvenidos .texto{
-    width: cover;
-    
-    text-align: center;
-    padding-left: 20px;
+    width: 50%;
+    max-width: 500px;
+    text-align: initial;
+    padding-left: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -444,8 +446,8 @@ header nav {
     background-image: url("fondos/web-3.0-1024x576.webp");
     background-size: cover;
     background-position: center center;
-    height:30vh ;
-    width:60vh;
+    height:25vh ;
+    width: 500px;;
     
     
 }
