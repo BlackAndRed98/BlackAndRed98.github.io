@@ -108,7 +108,7 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 1.5vh;
+    font-size: 15px;
     
 }
 
@@ -517,7 +517,7 @@ background-image: linear-gradient(
 
 .cubo:hover { 
     
-    transform: rotateY(125deg) rotateX(155deg);
+    transform: rotateY(20deg) rotateX(5deg);
 
     
 }
