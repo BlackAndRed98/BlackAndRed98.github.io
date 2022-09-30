@@ -490,4 +490,91 @@ background-image: linear-gradient(
     margin-left: 100px;
 
 }
+
+
+
+/*--------------PAGINA LOGIN-------------*/
+
+#envoltura {
+    
+    perspective: 800px;
+    margin: 250px auto;
+    
+}
+
+.cubo {
+    position: relative;
+    width: 40vh;
+    height: 30vh;
+    
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(-20deg);
+    transition-duration: 7s;
+
+    
+   
+}
+
+.cubo:hover { 
+    
+    transform: rotateY(125deg) rotateX(155deg);
+
+    
+}
+
+
+
+.cubo div{
+    position: relative;
+    width: 40vh;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    transform: rotateY(20deg);
+
+    
+}
+
+.cubo div:nth-child(1) {
+    transform: translateZ(20vh) translateX(-0.5vh);
+    border-style: dashed;
+    border-color: azure;
+}
+
+.cubo div:nth-child(2){
+    transform: translateZ(-20vh) translateY(-30vh) rotateY(180deg) translateX(0.5vh);
+    border-style: dashed;
+    border-color: azure;
+
+}
+
+.cubo div:nth-child(3){ 
+    transform:translateY(-60vh) rotateY(-90deg) translatez(20.5vh)  ;
+    border-style: dashed;
+    border-color: azure;
+   
+}
+
+.cubo div:nth-child(4){
+    transform:translateY(-90vh) rotateY(90deg) translateZ(19.5vh);
+    border-style: dashed;
+    border-color: azure;
+   
+}
+
+.cubo div:nth-child(5){
+    transform: translateY(-140vh) rotateX(90deg) translateX(-0.6vh);
+    border-style: dashed;
+    border-color: azure;
+    height: 40vh;
+ width: 40vh;
+    
+}
+
+.cubo div:nth-child(6) {
+ transform:translateY(-150vh) rotateX(90deg) rotateX(180deg) translateX(-0.6vh) ;
+ height: 40vh;
+ width: 40vh;
+ border-style: dashed;
+ border-color: azure;
+}
 }
