@@ -495,7 +495,10 @@ background-image: linear-gradient(
 
 /*--------------PAGINA LOGIN-------------*/
 
+
+
 #envoltura {
+    
     
     perspective: 1000px;
     margin: 100px auto;
@@ -511,7 +514,7 @@ background-image: linear-gradient(
 
 .cubo {
     position: relative;
-    width: 40vh;
+    width: 20vh;
     height: 30vh;
     
     
@@ -523,12 +526,7 @@ background-image: linear-gradient(
    
 }
 
-.cubo:hover { 
-    
-    transform: rotateY(20deg) rotateX(5deg);
 
-    
-}
 
 
 
@@ -536,7 +534,13 @@ background-image: linear-gradient(
     position: relative;
     width: 40vh;
     height: 30vh;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-image: linear-gradient( 0deg,
+    rgba(0, 0, 0, 0.26),
+    rgba(0,0,0,0.5)) ,url("fondos/matrix\ numbers.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-rendering: optimizeQuality;
     transform: rotateY(20deg);
    
     
@@ -545,36 +549,40 @@ background-image: linear-gradient(
 .cubo div:nth-child(1) {
     transform: translateZ(20vh) translateX(-0.5vh);
     border-style: dashed;
-    border-color: azure;
+    border-color: rgba(0, 0, 0, 0.363);
+
+   
 }
 
 .cubo div:nth-child(2){
     transform: translateZ(-20vh) translateY(-30vh) rotateY(180deg) translateX(0.5vh);
     border-style: dashed;
-    border-color: azure;
+    border-color: rgba(0, 0, 0, 0.39);
 
 }
 
 .cubo div:nth-child(3){ 
     transform:translateY(-60vh) rotateY(-90deg) translatez(20.5vh)  ;
     border-style: dashed;
-    border-color: azure;
+    border-color: rgba(0, 0, 0, 0.377);
    
 }
 
 .cubo div:nth-child(4){
     transform:translateY(-90vh) rotateY(90deg) translateZ(19.5vh);
     border-style: dashed;
-    border-color: azure;
+    border-color: rgba(0, 0, 0, 0.39);
+    
    
 }
 
 .cubo div:nth-child(5){
     transform: translateY(-140vh) rotateX(90deg) translateX(-0.6vh);
     border-style: dashed;
-    border-color: azure;
+    border-color: rgba(0, 0, 0, 0.349);
     height: 40vh;
  width: 40vh;
+ 
     
 }
 
@@ -583,6 +591,18 @@ background-image: linear-gradient(
  height: 40vh;
  width: 40vh;
  border-style: dashed;
- border-color: azure;
+ border-color: rgba(0, 0, 0, 0.363);
 }
+}
+
+.cubo #registro {
+    color: rgba(0, 0, 0, 0.384);
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.cubo a {
+    font-size: 1.5vh;
+    width: 5vh;
 }

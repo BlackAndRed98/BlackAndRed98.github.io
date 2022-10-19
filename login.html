@@ -1,76 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackAndRed Login</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="login.js"></script>
+
+    
 </head>
 <body>
-    <header>
+
+<header>
         <div class="container">
             <p class="logo">BlackAndRed.io</p>
+           
             <nav>
                 <a href="#bienvenidos">Inicio</a>
                 <a href="#programas">Noticias</a>
                 <a href="#caracteristicas">Actualizacion</a>
             </nav>
-        </div>
-
+        </div> 
+</header>
+<section id="hero">
         <center>
             <h3>Entra o Registrate!</h3>
-                <br>
+            
+                
         <div id="envoltura">
             <div class="cubo">
+                
 
                 <!--1CARA DELANTERA-->
-                <div>
+                <div id="1d">
                      <p>EMAIL:</p>
                     <form action="login" autocomplete="on">
                         <input type="email" size="10vh" style="color:rgb(255, 255, 255) ; background-color: rgba(0, 0, 0, 0.63);">
                         <br>
-                        <p>CONTRASENIA</p>
+                        <p>CONTRASEÑA</p>
                         <input type="password" style="color:rgb(255, 255, 255) ; background-color: rgba(0, 0, 0, 0.664);">
-
-
-                    </form>   
+                        </form>
+                        
+                    <button type="submit" style="margin-top:2vh ;">
+                            Entrar
+                        </button>   
                
                 </div> 
 
                <!--2CARA TRASERA--> 
-               <div>
-                <P>ATRAS</P>
+               <div id="2d">
+                <P>Noticias</P>
+                <center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod architecto labore amet fugit fuga optio dolor cupiditate! Nihil maiores modi reiciendis tenetur esse repellat assumenda sit, mollitia provident ipsam.</center>
                </div> 
 
                <!--3CARA IZQUIERDA -->
-               <div>
-                <P>IZQUIERDA</P>
+               <div id="3d">
+                <p>Registrate</p>
+                <form action="registro" id="registro" >
+                    <a>nombre: <input type="text" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br>
+                    <a>edad: <input type="date" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br>
+                    <a>email: <input type="email" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br>
+                    <a>contarseña: <input type="password" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br> 
+                    
+
+                </form>
+                <button type="submit" style="margin-top:3vh ;"> Listo</button>
                </div>
                
                <!--4CARA derecha -->
-               <div>
+               <div id="4d">
                 <P>DERECHA</P>
                </div>
 
                 <!--5CARA arriba -->
-                <div>
+                <div id="5d" >
                     <P>ARRIBA</P>
                 </div>
                 
                 <!--6CARA abajo -->
-                <div>
+                <div id="6d">
                     <P>ABAJO</P>
                 </div>
-                
-
 
             </div>
                  
         </div>
-
-
         </center>
-    </header>
+    </section>
+    
 </body>
 </html>
