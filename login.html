@@ -23,7 +23,7 @@
             </nav>
         </div> 
 </header>
-<section id="hero">
+<section id="hero" onmousemove="posicionPuntero(event)">
         <center><h2>Entra o Registrate!</h2></center>
             
          
@@ -34,13 +34,13 @@
             
                 
         <div id="envoltura">
-            <div class="cubo">
+            <div class="cubo" id="cb" >
                 
             
                 <!--Circulo-->
-                <div class="circulo">
-                     <p>EMAIL:</p>
-                    <form action="login" autocomplete="on">
+                <div class="circulo" id="cr"><form action="login" autocomplete="on" id="tablaInicio">
+                     <p id="email">EMAIL:</p>
+                    
                         <input type="email" size="10vh" style="color:rgb(255, 255, 255) ; background-color: rgba(0, 0, 0, 0.63);">
                         <br>
                         <p>CONTRASEÑA</p>
@@ -59,16 +59,57 @@
         
 
         
-    </section><section id="registro">
-        <div id="register"> <h3 style="font-size: 2.5vh;">Registrate!</h3>
+    </section>
+    
+    
+    <section id="registro">
+        <div id="register"> <form action="" id="tablaRegistro"><h3 style="font-size: 2.5vh;">Registrate!</h3>
             <a>nombre: <input type="text" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br>
                     
                     <a>email: <input type="email" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br>
                     <a>contraseña: <input type="password" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br> 
                     <a>edad: <input type="date" style="background-color:rgba(255, 255, 255, 0.473); color: azure;"></a><br>
                     <button type="submit" style="margin:20px ;">Crear</button>
-            
+            </form>
         </div>
+        <script>
+            
+            document.forms.tablaInicio[0].value = ('Ejemplo@gmail.com');
+            document.forms.tablaInicio[1].value = ('ABC123');
+            document.forms.tablaRegistro[0].value = ('USERNAME');
+            document.forms.tablaRegistro[1].value = ('Ejemplo@gmail.com');
+            document.forms.tablaRegistro[2].value = ('ABC123') ;
+            var cr = document.getElementById('cr') 
+            function posicionPuntero(event){
+                var y = event.clientY;
+                var x = event.clientX;
+                var mousePositions = document.getElementById('hero');
+                mousePositions = x , y;
+            console.log(x , y);
+            cr.style.height= y + 'px' 
+            cr.style.width = x + 'px'
+            cr.style.maxHeight = '500px'
+            cr.style.maxWidth = '600px'
+            cr.style.minHeight = '300px'
+            cr.style.minWidth = '200px'
+            cr.style.borderRadius = y - x - 2 + 'vh'
+            cr.style.backgroundPosition = x / y  + 'px'
+        
+            
+            }
+        
+            
+
+
+
+           
+
+            
+
+
+         
+            
+        </script>
 
 
     </section>
