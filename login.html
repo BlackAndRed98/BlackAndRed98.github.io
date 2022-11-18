@@ -27,9 +27,14 @@
 </header>
 
 
+ <div id="cookieAdvisor" >
+    <h4>Desea aceptar las <span>Cookies</span>?</h4>
+    <button type="submit"onclick="cookies(event)">Adelante!</button><button type="submit" onclick="quitCookies(event)">x</button>
+ </div>
+
 
 <section id="hero" onmousemove="posicionPuntero(event)">
-        <center><h2>Entra o Registrate!</h2></center>
+        <center><h2><a href="C:\Users\fnfbe\Documents\BlackAndRed98.github.io\login.html #tablaInicio">Entra</a> o <a href="C:\Users\fnfbe\Documents\BlackAndRed98.github.io\login.html #tablaRegistro">Registrate!</a></h2></center>
             
          
          <div id="news">
@@ -52,7 +57,8 @@
                         <br>
                         <p>CONTRASEÑA</p>
                         <input type="password" style="color:rgb(255, 255, 255) ; background-color: rgba(0, 0, 0, 0.664);">
-                        
+                        <br>
+                        <p>Confirme que no es un Robot: <input type="checkbox"></p>
                        
                     </form>
                         
@@ -69,7 +75,12 @@
 
 
     
-<section id="registro">
+<section id="seccionRegistro">
+
+    <div id="masInfo">
+        <h4>+ Info1</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ad provident dolor consequatur asperiores consequuntur laudantium reprehenderit, sint possimus sit minima architecto quos magni praesentium aliquid veniam doloremque. Ducimus, dolore?</p>
+    </div>
 
         <div id="register"> 
             
@@ -85,36 +96,52 @@
 
         </div>
 
+        
+        <div id="masInfoDos">
+            <h4>+ Info2</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ad provident dolor consequatur asperiores consequuntur laudantium reprehenderit, sint possimus sit minima architecto quos magni praesentium aliquid veniam doloremque. Ducimus, dolore?</p>
+        </div>
+</section>
 
 
         <script>
-            
             document.forms.tablaInicio[0].value = ('Ejemplo@gmail.com');
             document.forms.tablaInicio[1].value = ('ABC123');
             document.forms.tablaRegistro[0].value = ('USERNAME');
             document.forms.tablaRegistro[1].value = ('Ejemplo@gmail.com');
             document.forms.tablaRegistro[2].value = ('ABC123') ;
             var cr = document.getElementById('cr') ;
+            var tablaInicio = document.getElementById('tablaInicio');
+            tablaInicio.style.marginTop = '5vh';
             
+            function cookies (event) {
+                var cartel = document.getElementById('cookieAdvisor');
+
+
+
+            }
             function posicionPuntero(event){
-                var y = event.clientY;
-                var x = event.clientX;
-                var mousePositions = document.getElementById('hero');
-                mousePositions = x , y;
-            console.log(x , y);
+            var y = event.clientY;
+            var x = event.clientX
+            var mousePositions = document.getElementById('hero');
+            mousePositions = x , y;
+            
+           
             cr.style.height= y + 'px' ;
             cr.style.width = x + 'px';
             cr.style.maxHeight = '400px';
             cr.style.maxWidth = '600px';
-            cr.style.minHeight = '300px';
+            cr.style.minHeight = '350px';
             cr.style.minWidth = '200px';
             cr.style.borderRadius = y - x - 2 + 'vh';
-           
-    
-        
+            console.log(x , y);
         } 
+
+        
+
+
         </script>
-</section>
+
 
 
      

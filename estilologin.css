@@ -2,8 +2,7 @@
 *{box-sizing: border-box;
     color: azure; 
     }
-   
-    
+     
     html {
         scroll-behavior: smooth;
     }
@@ -14,8 +13,6 @@
     letter-spacing: 2px;
     background-color:rgb(0, 0, 0);
 }
-
-
     /*------TAMANIO #DE #FUENTES #Y #ESTILO #MAS #HOVER #DE #LOS #BOTONES-------*/
 
 h1{font-size: 3.5em;}
@@ -52,12 +49,33 @@ button:hover {
 
 .container {
     max-width: 1400px;
-    margin: auto;
-    
+    margin: auto;  
 }
 
+#cookieAdvisor{
+      background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.171),
+        rgba(0, 0, 0, 0.87)
+    ), url("fondos/galaxyag.png");
+    background-repeat:no-repeat;
+    border: solid, black;
+    background-size: cover;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    letter-spacing: 1vh;
+    font-size: larger;
+
+    
 
 
+}
 
 /*----------HEADER-----------------*/
 
@@ -71,8 +89,7 @@ header .logo {
     padding: 25px 30px;
     font-weight: bold;
     color: azure;
-    font-size: 5vh; 
-    
+    font-size: 5vh;  
 }
 
 header .logo:hover{
@@ -80,34 +97,29 @@ header .logo:hover{
     transition-timing-function: ease-in-out ;
     letter-spacing: 4px;
     color:rgba(255, 0, 0, 0.795);
-
 }
 
 header .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: center;   
 }
 
 header .nav {
     display:flex ;
     flex-direction: column;
     text-align: center;
-    
-    
-    
-
+    align-items: center;
+    justify-content: center;
 }
 
 
 header a {
-    padding: 5px 30px 10px ;
+    padding: 4px 30px 10px ;
     text-decoration: none;
     font-weight: bold;
     color: white;
     font-size: 15px;
-    
 }
 
 
@@ -115,7 +127,6 @@ header a:hover {
     color:rgb(255, 0, 0);
     transition: all 2s;
     letter-spacing: 2px;
-
 }
 
 /*------------HERO #SECCION #PRINCIPAL #MAS #ANIMACION #PRINCIPAL------------*/
@@ -124,15 +135,11 @@ header a:hover {
     display: grid;
     align-items: center;
     justify-content: center;
-    justify-items: center;
-  
+    justify-items: center; 
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    
-
     text-align: center;
-    
     height: 82vh;
     width: 100%;
     color: beige;
@@ -144,7 +151,6 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;  
-
 }
 #hero h1{
 
@@ -164,8 +170,7 @@ animation-name: animar;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     transform: skewX(10deg)skewY(-10deg) translateY(0em);
-    padding: 10px, 30px;
-    
+    padding: 10px, 30px; 
 
 }
 #hero h2{
@@ -173,13 +178,11 @@ animation-name: animar;
     color: azure;
     animation-name: animar;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+    padding-bottom: 10vh;
+    margin: 0;
     letter-spacing: 0.5vh;
     font-size: 3vh;
-    transform: skewX(5deg) ;
-    
-
-
+    transform: skewX(10deg) ;
 }
 
 #hero button {
@@ -192,9 +195,6 @@ animation-name: animar;
 
 
 @keyframes animar {
-    
-
-    
 
     0% {
         
@@ -202,10 +202,6 @@ animation-name: animar;
        transform: scale(.3);
         letter-spacing: 5px;
         border-color: azure;
-       
-       
-       
-
 
     }
     10%{
@@ -214,10 +210,7 @@ animation-name: animar;
     }
 
     30% {
-        color: rgb(0, 0, 0);
-    
-       
-        
+        color: rgb(0, 0, 0);     
     }
 
     50% {
@@ -235,32 +228,31 @@ animation-name: animar;
     80% {
         color: rgba(0,0,0,0.2);
         border-color: rgba(153, 141, 141, 0.658);
-        transform: rotateY(-500deg);
-        
-        
+        transform: rotateY(-500deg);  
          
     }
 
     100%{
         color: azure;
-        border-color: azure; 
-        
+        border-color: azure;     
     }
-   
-
 }
 
 
-
-
- /*------TAMANIO CUBO Y PERSPECTIVAS-------*/
+ /*------PaginaLogIn desde novedades-------*/
+#news {
+    
+    margin: 0;
+    position: relative;
+    text-align: center;
+    float: left;
+    display: grid ;
+}
 
 #envoltura {
-    
-    
+  
     width: 50vh;
     justify-content: center;
-
     perspective: 900px;
     max-width: 1400px;
     min-width: 400px;
@@ -268,22 +260,15 @@ animation-name: animar;
     align-items: center;
     justify-content: center;
     flex-direction: column;    
-   
-     
+    
 }
 
 .cubo {
-   
-    
-    
-   
-   
+ 
     transform-style: preserve-3d;
     transform: rotateX(10deg);
     transition-duration: 7s;
-    
-    
-   
+  
 }
 
 
@@ -292,7 +277,7 @@ animation-name: animar;
 #cr{
     position: inherit;
     width: 30vh;
-    height: 20vh;
+    height: 40vh;
     background-image: linear-gradient( 0deg,
     rgba(0, 0, 0, 0.26),
     rgba(0,0,0,0.5)) ,url("fondos/mundoweb3.png");
@@ -304,9 +289,6 @@ animation-name: animar;
    border-radius: 100%;
    border-style: solid;
    border-color: rgba(0, 0, 0, 0.658);
-   
-  
-   
 }
 
 
@@ -320,53 +302,69 @@ animation-name: animar;
     margin-top: 100vh;
     
 }
-#registro {
+#seccionRegistro {
     display: flex;
-    justify-content:center ;
+    justify-content:space-between ;
     background-image:url("fondos/mundoweb3.png") ;
     background-size: cover;
+    height: 80vh;
+    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
 }
 
 #register{
     border: solid; color: rgba(255, 255, 255, 0.349);
     width: 500px;
     display: grid;
-    
-    
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     letter-spacing: 0.3vh;
-    background-color: rgba(0, 0, 0, 0.479);
-   
-   
-    
-    
-    
-
-    
+    background-color: rgba(0, 0, 0, 0.801);
     text-align: center center;
-    
-    
-    
-   
-
-}
-
-#news {
     position: relative;
-   
-    
+    margin: 1px 10px 1px 5px;
+}
+
+#masInfo{
+    width: 30vh;
+    height: 50vh;
     text-align: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.349);
+    background-color: rgba(0, 0, 0, 0.801);
+    position: relative;
     
-    
-   
-    
-    float: left;
-    display: block ;
-    
-   
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
     
 }
+
+#masInfoDos{
+    width: 30vh;
+    height: 50vh;
+    text-align: center;
+    border-style: solid;
+    border-color:rgba(255, 255, 255, 0.349) ;
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 5px 10px 5px 10px;
+}
+
+
