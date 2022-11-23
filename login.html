@@ -75,7 +75,7 @@
 
 
     
-<section id="seccionRegistro">
+<section id="seccionRegistro" onmousemove="moverInfo(event)">
 
     <div id="masInfo">
         <h4>+ Info1</h4>
@@ -90,7 +90,7 @@
                     
                     <a>email: <input type="email" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br>
                     <a>contraseña: <input type="password" style="background-color:rgba(0, 0, 0, 0.685); color: azure;"></a><br> 
-                    <a>edad: <input type="date" style="background-color:rgba(255, 255, 255, 0.473); color: azure;"></a><br>
+                    <a>edad: <input type="date" style="background-color:rgba(255, 255, 255, 0.473); color: #f0ffff;"></a><br>
                     <button type="submit" style="margin:20px ;">Crear</button>
             </form>
 
@@ -110,16 +110,20 @@
             document.forms.tablaRegistro[0].value = ('USERNAME');
             document.forms.tablaRegistro[1].value = ('Ejemplo@gmail.com');
             document.forms.tablaRegistro[2].value = ('ABC123') ;
+            
             var cr = document.getElementById('cr') ;
             var tablaInicio = document.getElementById('tablaInicio');
+            var seccionRegistro = document.getElementById('seccionRegistro')
             tablaInicio.style.marginTop = '5vh';
             
+            
             function cookies (event) {
-                var cartel = document.getElementById('cookieAdvisor');
-
-
-
+                var cartel = document.getElementById('cookieAdvisor')[0];
+                
+            
             }
+
+            
             function posicionPuntero(event){
             var y = event.clientY;
             var x = event.clientX
@@ -135,8 +139,23 @@
             cr.style.minWidth = '200px';
             cr.style.borderRadius = y - x - 2 + 'vh';
             console.log(x , y);
+            
         } 
+       
+        function moverInfo (event){
+        
+        var y = event.clientY;
+        var x = event.clientX;
+        var z = event.clientZ;
+        mousePositions = y, x;
 
+        
+        
+        
+
+            
+            
+        }
         
 
 
